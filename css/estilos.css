@@ -1,0 +1,144 @@
+body {
+    background: #e4e4e4;
+    font-family: 'Roboto', 'Playfair Display', sans-serif;
+}
+
+/*La capa superior completa de la cabecera (logos + titulo)*/
+.logo_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: double #472c2c 0.35rem;
+    background: #e4e4e4;
+}
+
+/*Los iconos de los discos*/
+.logo {
+    max-width: 150px;
+    height: 100px;
+}
+
+/*El titulo LA CASA DEL VINILO*/
+h1 {
+    color: #391d80;
+    font-size: 4rem;
+    font-family: 'Open Sans';
+    flex-grow: 1;
+    text-align: center;
+}
+
+/*La barra de navegación completa*/
+.navbar-custom {
+    background: #391d80;
+    border: solid white;
+}
+
+/*Los iconos de la barra de navegación, con su texto*/
+.navbar-custom a {
+    color: white;
+    font-weight: bold;
+    margin-left: 0.4rem;
+}
+
+/*Los iconos de la barra de navegación, con su texto, cuando se les pasa el ratón por encima*/
+.navbar-custom a:hover {
+    color: rgb(76, 187, 135);
+}
+
+/*Los iconos de la barra de navegación, con su texto, cuando tienen el foco o se ponen activos  */
+.navbar-custom a:focus,
+.navbar-custom a:active {
+    color: white;
+}
+
+/*Los iconos de la barra de navegación, con su texto. El estilo se aplicará solo cuando el ratón pasa sobre el enlace y no esté activo*/
+.navbar-custom a:not(:active):hover {
+    color: rgb(76, 187, 135);
+}
+
+/*El menú de hamburguesa que aparece en la barra de nagevación cuando se reduce la pantalla*/
+.navbar-toggler {
+    background-color: white;
+}
+
+/*Los botones de la aplicación*/
+.btn-custom {
+    background-color: #391d80; 
+    color: white; 
+}
+
+/*Los botones de la aplicación al pasar el ratón por encima*/
+.btn-custom:hover {
+    background-color: rgb(76, 187, 135); /* Color de fondo al pasar el ratón */
+ }
+
+/* Los botones deshabilitados */
+.btn-disabled {
+    pointer-events: none; 
+    background-color: #e9ecef; 
+    color: #6c757d; 
+    border: 1px solid #ced4da; 
+    cursor: not-allowed; 
+    opacity: 0.5;
+}
+
+/* Contenedor de los formularios de la aplicación */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 550px; /* Ancho máximo para hacerlo más estrecho */
+    margin: 0 auto; /* Centrado horizontal */
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+/*Títulos de los formularios de la aplicación*/
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/*Inputs de texto de los formularios */
+.form-container .form-control {
+    margin-bottom: 25px;
+}
+
+/* Los enlaces de los formularios (El enlace de registrate aqui o Inicia sesión aquí), al pasar el ratón por encima*/
+.form-container a:hover {
+    color: #391d80; /* Color más oscuro al pasar el ratón */
+}
+
+/*El pie de página al completo*/
+.pie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    background-color: #373A3C;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Los textos del pie de pagina salvo el de Politica de Cookies*/
+footer h4 {
+    color: white;
+}
+
+/*El texto de Tambien puedes visitarnos en: y los tres iconos de las redes sociales*/
+#tambien {
+    padding-top: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/*Los elementos de Contacta con nosotros y Avisos legales*/
+.contacto {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+/*El texto de Politica de Cookies*/
+#politica {
+    color: rgb(241, 21, 157);
+    position: relative;
+    top: -0.5rem;
+}
